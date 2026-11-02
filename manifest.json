@@ -1,0 +1,23 @@
+{
+  "name": "CW Paperwork Portal",
+  "short_name": "CW Paperwork Portal",
+  "description": "Caleb Wallengren Designs — Theatrical Lighting Paperwork & Live Eos Portal",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#06080E",
+  "theme_color": "#06080E",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}

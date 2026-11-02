@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark" style="color-scheme: dark; background-color: #06080E;">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icon.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#06080E" />
+    <meta name="apple-mobile-web-app-title" content="CW Paperwork Portal" />
+    <meta name="application-name" content="CW Paperwork Portal" />
+    <title>CW Paperwork Portal</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <style id="cw-ios-native-styles">:root{--sat:env(safe-area-inset-top,0px);--sab:env(safe-area-inset-bottom,0px);--sal:env(safe-area-inset-left,0px);--sar:env(safe-area-inset-right,0px);--lightningcss-light: ;--lightningcss-dark:initial;color-scheme:dark}html,body,#root{color:#f1f5f9;overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;width:100%;height:100%;margin:0;padding:0;background-color:#06080e!important}input,textarea,select,[contenteditable]{-webkit-user-select:text;user-select:text}@media screen and (width<=767px){input,select,textarea{font-size:16px!important}}</style>
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const origPrint = window.print.bind(window);
+        window.print = function () {
+          if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.iosPrint) {
+            window.webkit.messageHandlers.iosPrint.postMessage('print');
+          } else {
+            origPrint();
+          }
+        };
+      });
+    </script>
+    <script type="module" crossorigin src="./assets/index-DAjjmOEW.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CtjKeOsM.css">
+  </head>
+  <body style="background-color: #06080E;">
+    <div id="root"></div>
+  </body>
+</html>
